@@ -95,6 +95,13 @@ func main() {
 	r.Get("/videos/{postID}/{mediaNum}", handlers.Videos)
 	r.Get("/grid/{postID}", handlers.Grid)
 	r.Get("/oembed", handlers.OEmbed)
+
+	// Serve static files (videos, images, etc.)
+	fileServer := http.FileServer(http.Dir("static"))
+	r.Get("/static/*", func(w http.ResponseWriter, r *http.Request) {
+		http.StripPrefix("/static/", fileServer).ServeHTTP(w, r)
+	})
+
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		views.Home(w)

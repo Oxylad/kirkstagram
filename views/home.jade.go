@@ -7,11 +7,18 @@ import (
 )
 
 const (
-	home__0 = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta property="og:title" content="Kirkified InstaFix"/><meta property="og:site_name" content="Kirkified InstaFix"/><meta property="og:description" content="Fix Instagram embeds in Discord (and Telegram!)"/><title>Kirkified InstaFix</title><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100%&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;🛠&lt;/text&gt;&lt;/svg&gt;"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.13/css/pico.min.css"/></head><body><main class="container" style="max-width: 35rem"><hgroup><h1>Kirkified InstaFix</h1><h2>Kirkified Instagram embeds in Discord (and Telegram!)</h2></hgroup><p>InstaFix serves fixed Instagram image and video embeds. Heavily inspired by fxtwitter.com.</p><section><header><h3 style="margin-bottom: 4px">How to Use</h3><ul><li>Remove `
+	home__0 = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta property="og:title" content="Kirkified  instaFix Link"/><meta property="og:site_name" content="Kirkified  instaFix Link"/><meta property="og:description" content="Fix Instagram embeds in Discord (and Telegram!)"/><title>Kirkified  instaFix Link</title><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100%&#39;&gt;&lt;text y=&#39;.9em&#39; font-size=&#39;90&#39;&gt;🛠&lt;/text&gt;&lt;/svg&gt;"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1.5.13/css/pico.min.css"/></head><body><main class="container" style="max-width: 35rem"><hgroup><h1>Kirkified  instaFix Link</h1><h2>Kirkified  Instagram embeds in Discord (and Telegram!)</h2></hgroup><p>InstaFix serves fixed Instagram image and video embeds. Heavily inspired by fxtwitter.com.</p><section><header><h3 style="margin-bottom: 4px">How to Use</h3><ul><li>Remove `
 	home__1 = ` from instagram.com and add `
-	home__2 = ` to fix embeds resulting in "kirkstagram.com"</li></ul></header><p><small><a href="https://github.com/Wikidepia/InstaFix" target="_blank">Source code available in GitHub!</a></small><br/><small>• Instagram is a trademark of Instagram, Inc. This app is not affiliated with Instagram, Inc.</small><br/><small>• This site was made possible thanks to `
-	home__3 = ` on GitHub and their open source work InstaFix.</small><br/><small>Hosted by `
-	home__4 = ` on GitHub.</small></p></section></main></body></html>`
+
+	home__2 = ` to fix embeds resulting in "kirkstagram.com"</li>`
+
+	home__3 = `<li>We have a apple shortcut available <a href="https://www.icloud.com/shortcuts/1051a363d0414db09912956cceb29c49" target="_blank">here</a> to automate this process on iOS</li>`
+
+	home__4 = `</ul></header><video src="/static/kirkstagram-demo.mp4" controls="controls" muted="muted" style="width: 100%; max-height: 100%">Your browser does not support the video tag.</video><hr/><p><small><a href="https://github.com/Wikidepia/InstaFix" target="_blank">Source code available in GitHub!</a></small><br/><small>• Instagram is a trademark of Instagram, Inc. This app is not affiliated with Instagram, Inc.</small><br/><small>• This site was made possible thanks to `
+
+	home__5 = ` on GitHub and their open source work InstaFix.</small><br/><small>Hosted by `
+
+	home__6 = `</small></p></section></main></body></html>`
 )
 
 func Home(wr io.Writer) {
@@ -22,9 +29,10 @@ func Home(wr io.Writer) {
 	buffer.WriteString(home__1)
 	buffer.WriteString(`kirk`)
 	buffer.WriteString(home__2)
-	buffer.WriteString(`<a href="https://github.com/Wikidepia">Wikidepia</a>`)
 	buffer.WriteString(home__3)
-	buffer.WriteString(`<a href="https://github.com/Oxylad">Oxylad</a>`)
 	buffer.WriteString(home__4)
-
+	buffer.WriteString(`<a href="https://github.com/Wikidepia">Wikidepia</a>`)
+	buffer.WriteString(home__5)
+	buffer.WriteString(`<a href="https://github.com/Oxylad">Oxylad</a>`)
+	buffer.WriteString(home__6)
 }

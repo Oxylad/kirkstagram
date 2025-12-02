@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	embed__0  = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="theme-color" content="#CE0071"/>`
+	embed__0  = `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="theme-color" content="#eb8c34"/>`
 	embed__1  = `<meta property="og:url" content="`
 	embed__2  = `"/><meta property="og:description" content="`
 	embed__3  = `"/>`
@@ -22,7 +22,7 @@ const (
 	embed__14 = `"/><meta name="twitter:player:height" content="`
 	embed__15 = `"/><meta name="twitter:player:stream" content="`
 	embed__16 = `"/><meta name="twitter:player:stream:content_type" content="video/mp4"/>`
-	embed__17 = `<meta property="og:site_name" content="InstaFix"/>`
+	embed__17 = `<meta property="og:site_name" content="Kirkstagram InstaFix"/>`
 	embed__18 = `<meta property="og:image" content="`
 	embed__20 = `<meta property="og:video" content="`
 	embed__21 = `"/><meta property="og:video:secure_url" content="`
