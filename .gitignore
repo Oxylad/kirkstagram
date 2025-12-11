@@ -23,4 +23,5 @@
 node_modules/
 static/
 *db
-*log
+/logs
+instafix
